@@ -29,33 +29,33 @@
 ## Routes
 
 * REST Method GET
-  * Path: /book
+  * Path: /api/book
     * returns all books in db as an array
-  * Path: /book/:id
+  * Path: /api/book/:id
     * returns the book at the given id
 
-  * Path: /author
+  * Path: /api/author
     * returns all authors items in db as an array
-  * Path: /author/:id
+  * Path: /api/author/:id
     * returns the author at the given id
 
 * REST Method POST
-  * Path: /book
+  * Path: /api/book
     * takes a JSON obj as input and returns the record that was added to the DB
 
-  * Path: /author
+  * Path: /api/author
     * takes a JSON obj as input and returns the record that was added to the DB
 
 * REST Method PUT
-  * Path: /book/:id
+  * Path: /api/book/:id
     * takes a JSON obj as input and returns the record that was updated in the DB, with updated data included
 
-  * Path: /author/:id
+  * Path: /api/author/:id
     * takes a JSON obj as input and returns the record that was updated in the DB, with updated data included
 
 * REST Method DELETE
-  * Path: /book/:id
+  * Path: /api/book/:id
     * deletes the record with the specified id and returns the deleted item upon successful deletion
 
-  * Path: /author/:id
+  * Path: /api/author/:id
     * deletes the record with the specified id and returns the deleted item upon successful deletion
