@@ -16,7 +16,7 @@ router.use('/:model', (req, res, next) => {
   if(!model) {
     next('Model type not supported');
   }
-  
+
   req.model = model;
   console.log(req.model);
   next();
@@ -39,7 +39,7 @@ router.post('/:model', async (req, res, next) => {
   const model = req.model;
 
   let newRecord = await model.create(req.body);
-  res.send(newRecord);
+  res.status(201).send(newRecord);
 });
 
 router.put('/:model/:id', async (req, res, next) => {
